@@ -1,0 +1,427 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} \STEFAN ANFRZEJJ!!!! {% endblock %}
+{% block content %}
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right">
+            <h1 class="headline">Jesteś <span class="home_text"><b>ELEKTRYKIEM</b></span>?<br>Te kursy są dla Ciebie!</h1>
+            <p class="para para-light py-3">Jeśli wiążesz swoją przyszłość z prpojektowniem w branży elektrycznej to na pewno znajdziesz tu coś dla siebie. Kursy od podstawowych po zaawansowane.</p>
+            <p class="para para-light py-3">Aby zapoznać się z ofertą zapraszam do działu Kursy.</p>
+            <div class="my-3">
+                <a class="btn" href="#plans">Kursy</a>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of home -->
+
+
+    <!-- Information -->
+    <section class="information">
+        <div class="container-fluid">
+            <div class="row text-light">
+                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                    <i class="fas fa-clock fa-3x p-2"></i>
+                    <h4 class="py-3">10 lat doświadczenia</h4>
+                    <p class="para-light">Ponad dziesięć lat doświadczenia w projektowaniu instalacji elektrycznych!</p>
+                </div>
+                <div class="col-lg-4 text-center p-5"  data-aos="zoom-in">
+                    <i class="fas fa-wrench fa-3x p-2"></i>
+                    <h4 class="py-3">Różne branże</h4>
+                    <p class="para-light">Doświadczenie w branży morskiej, energetycznej, przemysłowej oraz mieszkaniowej!</p>
+                </div>
+                <div class="col-lg-4 text-center p-5 text-dark"  data-aos="zoom-in">
+                    <i class="fas fa-globe fa-3x p-2"></i>
+                    <h4 class="py-3">Projekty krajowe oraz zagraniczne</h4>
+                    <p class="para-light">Doświadczenie w projektowaniu dla firm z Polski, Turcji, Korei Południowej, Litwy, Malty i wiecej!</p>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of information -->
+
+
+    <!-- About -->
+    <section class="about d-flex align-items-center text-light py-5" id="about">
+        <div class="container" >
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <p>O MNIE</p>
+                    <h3>mgr inż. Sebastian Dydak <br> projektant branży elektrycznej</h3>
+                    <p class="py-2 para-light">Tutaj ładny tekst jak to kończyłem polibude gdańską, pracowałem 10 lat i zdobywałem doświadczenie teraz to doświadczenie chcę przekazać innym, którzy są na pocżątku tej drogi.</p>
+                    <p class="py-2 para-light">W pierwszym akapicie się chwalę soboą, w tym piszą co chcę od siebie dać innym i jak to będą zadowoleni jak rylko zapłacą mi grube pieniądze xD.</p>
+                    <p class="py-2 para-light">Jeśli masz jakieś pytania lub wątpliwości zapraszam do sekcji kontakt.</p>
+
+                    <div class="my-3">
+                        <a class="btn" href="#contact">Kontakt</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down"> 
+                    <img class="img-fluid" src="{% static 'main/assets/images/about.jpg' %}" alt="about" >
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of about -->
+
+
+    <!-- Plans -->
+    <section class="plans d-flex align-items-center py-5" id="plans">
+        <div class="container text-light" >
+            <div class="text-center pb-4">
+                <p>Nasze kursy</p>
+                <h2 class="py-2">Sprawdź, który jest najlepszy dla Ciebie</h2>
+                <p class="para-light">Jesli masz wątpliwości, którą ofertę wybrać, zapraszam do kontaktu.</p>
+            </div>
+            <div class="row gy-4" data-aos="zoom-in">
+                <div class="col-lg-4">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">Kurs podstawowy</h4>
+                        <p class="py-3">Rozpoczynasz swoją przygodę z oprogramowaniem AutoCAD? Szkolenie podstawowe jest idealnym rozwiązaniem dla Ciebie</p>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Zapoznanie się z interfejsem</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Wprowadzania komend</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Podstawowe funkcje rysowania</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Podstawowe funkcje edycji rysunku</p>
+                        </div>
+                        <h4 class="py-3">Cena: <s>450 zł</s> 300 zł</h4>
+                        <div class="my-3">
+                            <a class="btn" href="#your-link" >Więcej</a>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">Kurs średnio zaawansowany</h4>
+                        <p class="py-3">Jeśli zapoznałeś się już z podstawowymi funkcjami programu możesz rozszerzyć swoją wiedzę na tym kursie.</p>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Zaawansowane wprowadzanie komend</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Zaawansowane funkcje rysowania oraz edycji</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Eksport danych z rysunku</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Jak rysować aby było dobrze</p>
+                        </div>
+                        <h4 class="py-3">Cena: <s>550 zł</s> 400 zł</h4>
+                        <div class="my-3">
+                            <a class="btn" href="#your-link" >Więcej</a>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-transparent px-4" >
+                        <h4 class="py-2">Kurs zaawansowany</h4>
+                        <p class="py-3">Znasz już doskonale funkcje programu AutoCAD? Świetnie się składa, dla takich osób mamy kurs zaawansowany.</p>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Zapoznanie się z LISP?</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Stworzenie własnego LISPa</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Jak stworzyć interface programu LISP</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Jakaś zaawansowana pierdoła.</p>
+                        </div>
+                        <h4 class="py-3">Cena: <s>800 zł</s> 650 zł</h4>
+                        <div class="my-3">
+                            <a class="btn" href="#your-link" >Więcej</a>
+                        </div>
+                    </div>  
+                </div>
+            </div> <!-- end of row -->
+
+        </div> <!-- end of container -->
+    </section> <!-- end of plans -->
+
+
+    <!-- Work -->
+    <section class="work d-flex align-items-center py-5" >
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+                    <img class="img-fluid" src="{% static 'main/assets/images/work.jpg' %}" alt="work">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                    <div class="row">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>OUR WORK</p>
+                            <h2 class="py-2">Explore unlimited possibilities</h2>
+                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                        </div>
+                        <div class="container" data-aos="fade-up">
+                            <div class="row g-5">
+                                <div class="col-6 text-start" >
+                                    <i class="fas fa-briefcase fa-2x text-start"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1258" data-purecounter-duration="3">1</h2>
+                                    <p>PROJECTS COMPLETED</p>
+                                </div>
+                                <div class="col-6" >
+                                    <i class="fas fa-award fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="3">1</h2>
+                                    <p>AWARDS</p>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fas fa-users fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255" data-purecounter-duration="3">1</h2>
+                                    <p>CUSTOMER ACTIVE</p>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1157" data-purecounter-duration="3">1</h2>
+                                    <p>GOOD REVIEWS</p>
+                                </div>
+                            </div>
+                        </div> <!-- end of container -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of col-lg-5 -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of work -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 testimonial text-light d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-center w-lg-75 m-auto pb-4">
+                    <p>Nasz zespół</p>
+                    <h2 class="py-2">Ponznaj nasz zespół!</h2>
+                    <p class="para-light">Tutaj dużo pięknych słów, że zespół to jest w ogóle najelpsze co może być, że to sami specjaliści w różnych branżach itd itp.</p>
+                </div>
+            </div> <!-- end of row -->
+            <div class="row p-2" data-aos="zoom-in">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>Pan Andrzej pracuje u nas od 10 lat, jest najstarszy a zrazem najbiedniejszym członkiem naszego zespołu. Zna się na autocadzie średnio.</p>
+
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="{% static 'main/assets/images/testimonial-1.jpg' %}" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>Pan Andrzej</h6>
+                                                <p>Specjalista AutoCAD</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>Pani Agnieszka - Żona Pana Andrzeja! Może słabo zna autocada, za to revita średnio. Pracuje za darmo, a w tym wypadku gratis to uczciwa cena</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="{% static 'main/assets/images/testimonial-2.jpg' %}" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>Pani Agnieszka</h6>
+                                                <p>AutoCAD, Revit</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>Opis Pana Adnrzeja<br>Opisa Pana Andrzeja<br>Opis Pana Andrzeja<br>Opis Pana Andrzeja.</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="{% static 'main/assets/images/testimonial-3.jpg' %}" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>Pani Agnieszka</h6>
+                                                <p>AutoCAD, Revit</p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>Opis Pana Adnrzeja<br>Opisa Pana Andrzeja<br>Opis Pana Andrzeja<br>Opis Pana Andrzeja.</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="{% static 'main/assets/images/testimonial-4.jpg' %}" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <p>Pan Andrzej</p>
+                                                <p>AutoCAD, Revit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of testimonials -->
+
+
+    <!-- Newsletter -->
+    <section class="newsletter text-light py-5">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+                    <h4 class="py-1">Zapoisz się do naszego Newslettera</h4>
+                    <p class="para-light">Zapisz się do naszego Newslettera aby być na bieżąco z promocjami oraz najnowszymi kursami.</p>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter your email address" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light" type="button">Zapisz się!</button>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of newsletter -->
+
+
+    <!-- Potwierdzenie wysłania maila --!>
+    {% if contact_name %}
+    <center>
+        <h2>OK, {{ contact_name }}:  Wysłane</h2>
+    </center>
+    {% endif %}
+
+    <!-- Contact -->
+    <section class="contact d-flex align-items-center py-5" id="contact">
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right">
+                    <div style="width:90%">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>KONTAKT</p>
+                            <h2 class="py-2">Zadaj pytanie</h2>
+                            <p class="para-light">Aby zadać pytanie skorzystaj z poniższego formularza. Postaramy się jak najszybciej odpowiedzieć.</p>
+                        </div>
+                        <form action="{% url 'home' %}" method="post">
+                            {% csrf_token %}
+                        <div>
+
+
+                            <div class="row" >
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="text" class="form-control form-control-input" id="contact_name" name="contact_name" placeholder="Twoje imię">
+                                    </div>                                
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="tel" class="form-control form-control-input" name="contact_phone" placeholder="Numer telefonu">
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <input type="email" class="form-control form-control-input" name="contact_email" placeholder="Twój e-mail">
+                            </div>
+                            <div class="form-group py-2">
+                                <textarea class="form-control form-control-input" name="contact_message" rows="6" placeholder="Wiadomość"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="my-3">
+                            <button type="submit" class="btn form-control-submit-button">Wyślij</button>
+                        </div>
+                        </form>
+                    </div> <!-- end of div -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.3135564493423!2d18.531872215845866!3d54.35143998020194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd75b71d995a0b%3A0x5a9025f4c1677e28!2sTaneczna%201%2C%2080-176%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1627125706151!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> <!-- end of col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of contact -->
+
+
+    <!-- Location -->
+    <section class="location text-light py-5">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>Adres</h6>
+                        <p>Taneczna 1/2, Gdańsk</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>Telefon:</h6>
+                        <p>+48 502 567 275</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>e-mail:</h6>
+                        <p>CADydak@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="fab fa-youtube fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>YouTube:</h6>
+                        <p>http://youtube.com/CADydak</p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of location -->
+
+{% endblock %}cad
